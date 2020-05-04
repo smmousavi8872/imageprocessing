@@ -1,0 +1,42 @@
+<resources>
+  <string name="app_name">ImageProcessing</string>
+
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="sobel_controls">Sobel Controls</string>
+  <string name="canny_controls">Canny Controls</string>
+  <string name="diff_gaussian_controls">Diff Gaussian Controls</string>
+  <string name="prewitt">Prewitt Controls</string>
+  <string name="save">Save</string>
+  <string name="ok">OK</string>
+  <string name="discard">Discard</string>
+  <string name="preprocess_controls">Preprocess Controls</string>
+  <string name="guassian_difference_dialog">Guassian Difference Controls</string>
+  <string name="preprocess">Preprocess</string>
+  <string name="filters">Filters</string>
+  <string name="morphology">Morphology</string>
+  <string name="retrival">Retrival</string>
+  <string name="archive">Archive</string>
+  <string name="select_operation">Select</string>
+  <string name="filter_canny">Canny</string>
+  <string name="filter_sobel">Sobel</string>
+  <string name="filter_guassian_diff">Guassian Diff</string>
+  <string name="features_vector">HSV Convert</string>
+  <string name="preprocess_rotation">Rotation</string>
+  <string name="preprocess_scale">Scale</string>
+  <string name="preprocess_remove_background">Remove Background</string>
+  <string name="preprocess_draw_contours">Draw Contours</string>
+  <string name="preprocess_reduce_noise">Reduce Noise</string>
+  <string name="no_filter_selected">No filters selected!</string>
+  <string name="erosion">Erosion</string>
+  <string name="dilation">Dilation</string>
+  <string name="opening">Opening</string>
+  <string name="closing">Closing</string>
+  <string name="rotation_controls">Rotation Controls</string>
+  <string name="dialog_title_scale_controls">Scale Controls</string>
+  <string name="contoure_controls">Contoure Controls</string>
+  <string name="save_sa_selected_artefact">Save as selected artefacte?</string>
+  <string name="error_alert">Something went wrong!</string>
+  <string name="selecte_image_first">Please select an image first.</string>
+  <string name="preprocess_gray_scale">Gray Scale</string>
+</resources>

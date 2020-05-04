@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/rlMainFragmentParentView"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/milkyWhite"
+  android:orientation="vertical"
+  tools:context=".ui.fragment.main.MainDrawerFragment">
+
+  <androidx.viewpager.widget.ViewPager
+    android:id="@+id/bottomNavigationViewPager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/bottomNavigationView"
+    android:layout_alignParentTop="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottomNavigationView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:background="@color/pureWhite"
+    app:itemTextColor="@color/primary"
+    app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+    app:menu="@menu/menu_bottom_nav_view" />
+
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/fabSelectImage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/bottomNavigationView"
+    android:layout_alignParentEnd="true"
+    app:srcCompat="@drawable/ic_add_white_24dp"
+    app:useCompatPadding="true" />
+
+</RelativeLayout>

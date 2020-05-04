@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+    android:id="@+id/menuItem1"
+    android:icon="@drawable/ic_archive_gray_24dp"
+    android:title="Item 1" />
+  <item
+    android:id="@+id/menuItem2"
+    android:icon="@drawable/ic_archive_gray_24dp"
+    android:title="Item 2" />
+  <item
+    android:id="@+id/menuItem3"
+    android:icon="@drawable/ic_archive_gray_24dp"
+    android:title="Item 3" />
+  <item
+    android:id="@+id/menuRetrival"
+    android:icon="@drawable/ic_archive_gray_24dp"
+    android:title="Item 4" />
+  <item
+    android:id="@+id/menuArchive"
+    android:icon="@drawable/ic_archive_gray_24dp"
+    android:title="Item 5" />
+
+</menu>

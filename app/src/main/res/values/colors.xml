@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#EF394F</color>
+  <color name="colorPrimaryDark">#EF394F</color>
+  <color name="colorAccent">#EF394F</color>
+  <color name="secondryBackground">#FAFAFA</color>
+  <color name="primaryGreen">#66BB6A</color>
+  <color name="primaryBule">#1D89E4</color>
+  <color name="middleGray">#858585</color>
+  <color name="darkGray">#757575</color>
+  <color name="darkerGray">#555555</color>
+  <color name="darkWhite">#CFCFCF</color>
+  <color name="lighterGray">#FAFAFA</color>
+  <color name="lightGray">#CCCCCC</color>
+  <color name="pureWhite">#FFFFFF</color>
+  <color name="milkyWhite">#EEEEEE</color>
+  <color name="pureBlack">#000000</color>
+  <color name="navyBule">#7281A3</color>
+  <color name="lightNavyBlue">#607FDC</color>
+  <color name="subtitleColor">#979797</color>
+  <color name="book_loading_background">#ffffff</color>
+  <color name="colorPrimaryText">#050505</color>
+  <color name="processingShade">#BB000000</color>
+</resources>

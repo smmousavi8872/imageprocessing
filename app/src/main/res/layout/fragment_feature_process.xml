@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/flFilterFragmentParentView"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <androidx.appcompat.widget.AppCompatImageView
+    android:id="@+id/imgEmptyPlaceholder"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:alpha=".1"
+    android:visibility="visible"
+    app:srcCompat="@drawable/ic_empty" />
+
+  <com.google.android.material.card.MaterialCardView
+    android:id="@+id/crFiltersUserPanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:paddingTop="8dp"
+      android:paddingBottom="8dp">
+
+      <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="8dp"
+        android:scrollbars="none">
+
+        <com.google.android.material.chip.ChipGroup
+          android:id="@+id/chipsSelectedImages"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:chipSpacing="8dp"
+          app:singleLine="true" />
+
+      </HorizontalScrollView>
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+          android:id="@+id/spnSelectFilter"
+          android:layout_width="wrap_content"
+          android:layout_height="32dp"
+          android:layout_gravity="center_vertical"
+          android:layout_marginStart="8dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/imgControls"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="end|center_vertical"
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="8dp"
+          android:layout_toEndOf="@id/spnSelectFilter"
+          android:background="?attr/selectableItemBackgroundBorderless"
+          android:clickable="true"
+          android:focusable="true"
+          android:padding="8dp"
+          app:srcCompat="@drawable/ic_filter_controls" />
+
+        <com.google.android.material.button.MaterialButton
+          android:id="@+id/btnApplyFilter"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentEnd="true"
+          android:layout_gravity="end"
+          android:backgroundTint="@color/primaryGreen"
+          android:fontFamily="@font/roboto_medium"
+          android:text="Apply"
+          android:textAllCaps="false"
+          android:textSize="18sp"
+          app:cornerRadius="4dp"
+          app:icon="@drawable/ic_apply"
+          app:iconGravity="textStart"
+          app:iconPadding="4dp"
+          app:iconSize="20dp"
+          tools:targetApi="lollipop" />
+
+      </RelativeLayout>
+
+    </LinearLayout>
+  </com.google.android.material.card.MaterialCardView>
+  <!--
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/rvArtefactResult"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />-->
+
+  <LinearLayout
+    android:id="@+id/llResultLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <androidx.appcompat.widget.AppCompatImageView
+      android:id="@+id/imgOriginalImage"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/pureWhite" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+      android:id="@+id/imgResultArtefact"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1" />
+  </LinearLayout>
+
+</FrameLayout>

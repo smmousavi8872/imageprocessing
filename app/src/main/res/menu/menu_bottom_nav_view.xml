@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+    android:id="@+id/menuPreprocess"
+    android:icon="@drawable/ic_preprocess2"
+    android:title="Preprocess" />
+  <item
+    android:id="@+id/menuFilters"
+    android:icon="@drawable/ic_filters"
+    android:title="Filters" />
+  <item
+    android:id="@+id/menuMorphology"
+    android:icon="@drawable/ic_morphology"
+    android:title="Morphology" />
+  <item
+    android:id="@+id/menuRetrival"
+    android:icon="@drawable/ic_image_retrival2"
+    android:title="Retrival" />
+  <item
+    android:id="@+id/menuArchive"
+    android:icon="@drawable/ic_archive"
+    android:title="Archive" />
+
+</menu>

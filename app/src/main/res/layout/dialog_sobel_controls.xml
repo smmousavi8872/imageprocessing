@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:rsb="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:textColor="@color/pureBlack"
+      android:text="Kernel Size" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+      android:id="@+id/spnSelectKernelSize"
+      android:layout_width="wrap_content"
+      android:layout_height="32dp"
+      android:layout_gravity="center_vertical"
+      android:layout_marginStart="32dp" />
+
+  </LinearLayout>
+
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/txtScaleSize"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="-8dp"
+    android:text="Scale Size"
+    android:textColor="@color/pureBlack" />
+
+  <org.florescu.android.rangeseekbar.RangeSeekBar
+    android:id="@+id/seekbarScaleSize"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    rsb:absoluteMaxValue="0"
+    rsb:absoluteMinValue="10"
+    rsb:alwaysActive="true"
+    rsb:singleThumb="true"
+    rsb:textAboveThumbsColor="@android:color/holo_green_light"
+    rsb:valuesAboveThumbs="true" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/txtDeltaSize"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="-8dp"
+    android:text="Delta Size"
+    android:textColor="@color/pureBlack" />
+
+  <org.florescu.android.rangeseekbar.RangeSeekBar
+    android:id="@+id/seekbarDeltaSize"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    rsb:absoluteMaxValue="0"
+    rsb:absoluteMinValue="10"
+    rsb:alwaysActive="true"
+    rsb:singleThumb="true"
+    rsb:textAboveThumbsColor="@android:color/holo_green_light"
+    rsb:valuesAboveThumbs="true" />
+
+  <androidx.appcompat.widget.AppCompatCheckBox
+    android:id="@+id/chkNoisReduction"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6dp"
+    android:layout_marginTop="16dp"
+    android:text="Noise Reduction" />
+
+  <androidx.appcompat.widget.AppCompatCheckBox
+    android:id="@+id/chkSetSelectedArtefact"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6dp"
+    android:text="Set Result as Selected Artefact" />
+
+  <com.google.android.material.button.MaterialButton
+    android:id="@+id/btnResetToDefault"
+    style="@style/Widget.MaterialComponents.Button.TextButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="16dp"
+    android:padding="8dp"
+    android:text="Reset to default"
+    android:textAllCaps="false"
+    android:textColor="@color/darkGray" />
+
+</LinearLayout>

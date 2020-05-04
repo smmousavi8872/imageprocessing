@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="8dp">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="@drawable/bg_custom_dialog"
+    android:padding="12dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/txtDilaogTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingLeft="16dp"
+      android:paddingTop="16dp"
+      android:paddingRight="16dp"
+      android:paddingBottom="8dp"
+      android:text="Message"
+      android:textColor="@color/lightNavyBlue"
+      android:textSize="18dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/txtDilaogMessage"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/txtDilaogTitle"
+      android:paddingLeft="16dp"
+      android:paddingTop="8dp"
+      android:paddingRight="16dp"
+      android:paddingBottom="8dp"
+      android:text="Are you sure, you want to delete this item?"
+      android:textColor="@color/lightNavyBlue"
+      android:textSize="16dp" />
+
+    <LinearLayout
+      android:id="@+id/flDialogContentContainer"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/txtDilaogMessage"
+      android:orientation="vertical">
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/txtPositiveButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/flDialogContentContainer"
+      android:layout_alignParentEnd="true"
+      android:layout_gravity="center_horizontal"
+      android:background="?attr/selectableItemBackgroundBorderless"
+      android:clickable="true"
+      android:focusable="true"
+      android:paddingLeft="16dp"
+      android:paddingTop="8dp"
+      android:paddingRight="16dp"
+      android:paddingBottom="8dp"
+      android:text="Yes"
+      android:textColor="@color/colorPrimary"
+      android:textSize="16dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/txtNegetiveButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@id/txtPositiveButton"
+      android:layout_gravity="center_horizontal"
+      android:layout_toStartOf="@id/txtPositiveButton"
+      android:background="?attr/selectableItemBackgroundBorderless"
+      android:clickable="true"
+      android:focusable="true"
+      android:paddingLeft="16dp"
+      android:paddingTop="8dp"
+      android:paddingRight="16dp"
+      android:paddingBottom="8dp"
+      android:text="No"
+      android:textColor="@color/colorPrimary"
+      android:textSize="16dp" />
+
+  </RelativeLayout>
+</FrameLayout>

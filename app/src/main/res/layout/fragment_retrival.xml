@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".ui.fragment.tabitems.retrieval.RetrievalFragment">
+
+
+  <ProgressBar
+    android:id="@+id/prgSearching"
+    style="?android:attr/progressBarStyleSmall"
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:layout_alignStart="@id/btnSearchDatabase"
+    android:layout_alignTop="@id/btnSearchDatabase"
+    android:layout_alignBottom="@id/btnSearchDatabase"
+    android:layout_marginStart="100dp"
+    android:elevation="4dp"
+    android:indeterminateTint="@color/pureWhite"
+    android:visibility="gone" />
+
+  <!-- TODO: Update blank fragment layout -->
+  <com.google.android.material.button.MaterialButton
+    android:id="@+id/btnSearchDatabase"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="16dp"
+    android:text="Search Database"
+    android:textAllCaps="false"
+    app:iconGravity="textStart"
+    android:textSize="16dp"
+    app:icon="@drawable/ic_search_white_24dp" />
+
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rvCbirResult"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/btnSearchDatabase"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="4dp" />
+
+</RelativeLayout>

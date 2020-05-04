@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginTop="-8dp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="8dp"
+      android:text="RGB Vector "
+      android:textColor="@color/pureBlack"
+      android:textSize="16dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/txtRgbVector"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:padding="8dp"
+      android:textSize="16dp"
+      tools:text="[255, 87, 124]" />
+  </LinearLayout>
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="8dp"
+      android:text="HSV Vector "
+      android:textColor="@color/pureBlack"
+      android:textSize="16dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/txtHsvVector"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:padding="8dp"
+      android:textSize="16dp"
+      tools:text="[255, 87, 124]" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="8dp"
+      android:text="Top left coordinates "
+      android:textColor="@color/pureBlack"
+      android:textSize="16dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/txtTopLeftPoint"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:padding="8dp"
+      android:textSize="16dp"
+      tools:text="(32, 76)" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="8dp"
+      android:text="Bottom right coordinates "
+      android:textColor="@color/pureBlack"
+      android:textSize="16dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/txtBottomRightPoint"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:padding="8dp"
+      android:textSize="16dp"
+      tools:text="(32, 76)" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="8dp"
+      android:text="Rectangle area "
+      android:textColor="@color/pureBlack"
+      android:textSize="16dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/txtLargestRectArea"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:padding="8dp"
+      android:textSize="16dp"
+      tools:text="685" />
+  </LinearLayout>
+
+</LinearLayout>
