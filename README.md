@@ -1,3 +1,3 @@
 # ImageProcessing
 
-This project is the home work of Image Processing course by Dr.Moghaddam presented in Tarbiat Modares university# imageprocessing
+An Image Processing app based powered by OpenCV SDK implementing basic functionalities such as edge detection,compression, segmentation, Content-based tagging, etc.
